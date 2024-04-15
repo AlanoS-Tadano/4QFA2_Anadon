@@ -37,25 +37,25 @@ function Tablegenerator() {
             var num1 = document.getElementById("num1").value;
             var num2 = document.getElementById("num2").value;
 
-            // Clear previous table
+            //Clears the previous table
             document.getElementById("out").innerHTML = "";
 
             var counter1 = 1;
             var counter2 = 1;
 
-            // Loop through rows
-            while (counter2 <= num2) {
+            //Row Loop Logic
+            while (counter2 <= num1) {
                 var row = "";
                 var counter3 = 1;
                 
-                // Loop through columns
-                while (counter3 <= num1) {
+                //Column Loop Logic
+                while (counter3 <= num2) {
                     row += (counter2 * counter3) + " ";
                     counter3++;
                 }
                 
-                // Print the row
-                document.getElementById("out").innerHTML += row.trim() + "\n";
+                //Printing Logic
+                document.getElementById("out").innerHTML += row.trim() + "<br>";
                 counter2++;
             }
         }
